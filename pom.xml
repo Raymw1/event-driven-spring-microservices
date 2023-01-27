@@ -24,6 +24,7 @@
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
         <twitter4j.version>4.0.7</twitter4j.version>
         <lombok.version>1.18.24</lombok.version>
+        <twitter-api-java-sdk.version>2.0.3</twitter-api-java-sdk.version>
     </properties>
 
     <dependencyManagement>
@@ -41,11 +42,16 @@
                 <scope>test</scope>
             </dependency>
 
+<!--            <dependency>-->
+<!--                <groupId>org.twitter4j</groupId>-->
+<!--                <artifactId>twitter4j-stream</artifactId>-->
+<!--                <version>${twitter4j.version}</version>-->
+<!--            </dependency>-->
 
             <dependency>
-                <groupId>org.twitter4j</groupId>
-                <artifactId>twitter4j-stream</artifactId>
-                <version>${twitter4j.version}</version>
+                <groupId>com.twitter</groupId>
+                <artifactId>twitter-api-java-sdk</artifactId>
+                <version>${twitter-api-java-sdk.version}</version>
             </dependency>
 
             <dependency>

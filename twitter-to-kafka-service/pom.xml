@@ -29,9 +29,14 @@
             <scope>test</scope>
         </dependency>
 
+<!--        <dependency>-->
+<!--            <groupId>org.twitter4j</groupId>-->
+<!--            <artifactId>twitter4j-stream</artifactId>-->
+<!--        </dependency>-->
+
         <dependency>
-            <groupId>org.twitter4j</groupId>
-            <artifactId>twitter4j-stream</artifactId>
+            <groupId>com.twitter</groupId>
+            <artifactId>twitter-api-java-sdk</artifactId>
         </dependency>
 
         <dependency>
