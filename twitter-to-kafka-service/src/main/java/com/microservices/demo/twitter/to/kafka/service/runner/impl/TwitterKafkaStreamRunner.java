@@ -3,6 +3,7 @@ package com.microservices.demo.twitter.to.kafka.service.runner.impl;
 import com.google.common.reflect.TypeToken;
 import com.microservices.demo.twitter.to.kafka.service.config.TwitterToKafkaServiceConfigData;
 import com.microservices.demo.twitter.to.kafka.service.listener.TwitterKafkaStatusListener;
+import com.microservices.demo.twitter.to.kafka.service.publisher.StreamedTweetEvent;
 import com.microservices.demo.twitter.to.kafka.service.runner.StreamRunner;
 import com.twitter.clientlib.ApiException;
 import com.twitter.clientlib.JSON;
@@ -11,6 +12,7 @@ import com.twitter.clientlib.api.TwitterApi;
 import com.twitter.clientlib.model.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Component;
 
 import java.io.BufferedReader;
@@ -26,14 +28,14 @@ public class TwitterKafkaStreamRunner implements StreamRunner {
 
     private final TwitterToKafkaServiceConfigData twitterToKafkaServiceConfigData;
 
-    private final TwitterKafkaStatusListener twitterKafkaStatusListener;
+    private final ApplicationEventPublisher eventPublisher;
 
     private TwitterApi twitterApi;
 
     public TwitterKafkaStreamRunner(TwitterToKafkaServiceConfigData configData,
-                                    TwitterKafkaStatusListener statusListener) {
+                                    ApplicationEventPublisher eventPublisher) {
         this.twitterToKafkaServiceConfigData = configData;
-        this.twitterKafkaStatusListener = statusListener;
+        this.eventPublisher = eventPublisher;
     }
 
     @Override
@@ -45,7 +47,12 @@ public class TwitterKafkaStreamRunner implements StreamRunner {
 
             Set<String> userFields = new HashSet<>(Arrays.asList(User.SERIALIZED_NAME_USERNAME));
 
-            InputStream result = twitterApi.tweets().searchStream().userFields(userFields).execute();
+            InputStream result = twitterApi
+                    .tweets()
+                    .searchStream()
+                    .expansions(new HashSet<>(Arrays.asList("author_id")))
+                    .execute();
+
             try {
                 JSON json = new JSON();
 
@@ -58,9 +65,12 @@ public class TwitterKafkaStreamRunner implements StreamRunner {
                         line = reader.readLine();
                         continue;
                     }
-                    LOG.info(line);
-                    Object jsonObject = json.getGson().fromJson(line, localVarReturnType);
-                    System.out.println(jsonObject != null ? jsonObject.toString() : "Null object");
+                    FilteredStreamingTweetResponse jsonObject = json.getGson().fromJson(line, localVarReturnType);
+                    if (jsonObject != null) {
+                        String tweetText = jsonObject.getData().getText();
+
+                        this.eventPublisher.publishEvent(new StreamedTweetEvent(tweetText));
+                    }
                     line = reader.readLine();
                 }
             } catch (Exception e) {
