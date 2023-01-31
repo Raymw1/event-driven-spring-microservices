@@ -1,6 +1,6 @@
-2023-01-31 11:48:05 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests]: TwitterToKafkaServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-01-31 11:48:05 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication for test class com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests
-2023-01-31 11:48:05 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+2023-01-31 14:51:35 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests]: TwitterToKafkaServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-01-31 14:51:35 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication for test class com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests
+2023-01-31 14:51:35 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
 
 Found multiple occurrences of org.json.JSONObject on the class path:
 
@@ -9,18 +9,121 @@ Found multiple occurrences of org.json.JSONObject on the class path:
 
 You may wish to exclude one of them to ensure predictable runtime behavior
 
-2023-01-31 11:48:05 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTests - Starting TwitterToKafkaServiceApplicationTests using Java 17.0.4.1 with PID 45232 (started by rayan in C:\Users\rayan\IdeaProjects\microservices-demo\twitter-to-kafka-service)
-2023-01-31 11:48:05 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
-2023-01-31 11:48:06 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTests - Started TwitterToKafkaServiceApplicationTests in 0.969 seconds (process running for 2.443)
-2023-01-31 11:48:06 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
-2023-01-31 11:48:06 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello World!
-2023-01-31 11:48:06 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
-2023-01-31 11:48:08 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Exception when calling TweetsApi#searchStream
-2023-01-31 11:48:08 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Status code: 401
-2023-01-31 11:48:08 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Reason: {
-  "title": "Unauthorized",
-  "type": "about:blank",
-  "status": 401,
-  "detail": "Unauthorized"
-}
-2023-01-31 11:48:08 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Response headers: {cache-control=[no-cache, no-store, max-age=0], content-length=[99], content-type=[application/problem+json], date=[Tue, 31 Jan 2023 14:48:07 GMT], perf=[7626143928], server=[tsa_d], x-connection-hash=[842871b3e52594dbd58f2d7fd3c9d384fe8c8c07f5f2f100ccc2f59b5bcc1561], x-response-time=[119], x-transaction-id=[55d5b35ae1613a31]}
+2023-01-31 14:51:35 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTests - Starting TwitterToKafkaServiceApplicationTests using Java 19.0.1 with PID 21728 (started by rayan in C:\Users\rayan\IdeaProjects\microservices-demo\twitter-to-kafka-service)
+2023-01-31 14:51:35 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2023-01-31 14:51:36 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTests - Started TwitterToKafkaServiceApplicationTests in 0.897 seconds (process running for 6.457)
+2023-01-31 14:51:36 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2023-01-31 14:51:36 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello World!
+2023-01-31 14:51:36 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-01-31 14:51:44 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @BelindaGreb: Early Spring by Belinda Greb - 
+https://t.co/x7ItgqCIHg Floral Photography by Belinda Greb
+#naturephotography https://t.co…
+2023-01-31 14:51:45 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @y2kmagazines: CoverGirl Galactic Glow (Spring 1999) https://t.co/bmDniAvPQO
+2023-01-31 14:51:45 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @BlVNCHl: ⠀ ⠀⠀
+⠀ ⠀⠀
+       Moschino Spring / Summer 2023
+
+                                CYNO
+
+⠀ ⠀⠀ https://t.co/PwunViBC3E
+2023-01-31 14:51:46 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Rainmaker1973: Photographer Ery Budi Nurhudha captured these coreographically posing lizards in Java, Indonesia, on May 24, 2018
+
+[sour…
+2023-01-31 14:51:46 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @GCWrestling_: *BREAKING*
+
+KOTA IBUSHI returns to the ring and makes his GCW Debut at @collective2023 in Los Angeles!
+
+March 30 - 4PM
+Jo…
+2023-01-31 14:51:46 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @NickLikesGreen YAS
+2023-01-31 14:51:47 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @thesoftestaura: interior spring 2023 https://t.co/fAg7PBxF5k
+2023-01-31 14:51:47 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text I’m selling 3 tickets for Harry Styles Love on Tour 01/31 tonight in Palm Spring 💜
+
+🏷Harry styles love on tour tickets Palm Springs Acrisure Arena lower bowl ❤️
+2023-01-31 14:51:47 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @Bignz @baseballinpix Let’s get Nolan Ryan and his team of agents on the line and get this set up for Spring Training- that would be Must See TV!!
+2023-01-31 14:51:47 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @BeckysBees: Looked like spring was in the air at one of the sites this morning. Gorgeous picture with all the snowdrops #beefarming #ho…
+2023-01-31 14:51:47 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @ELLEThailand: พาชม 2 ลุคของหนุ่มเตนล์ NCT และ WayV ในโททัลลุคจาก @YSL Spring/Summer23 เริ่มจากลุคแรกกับเสื้อแขนยาวผ้าชีฟองสีมัสตาร์ดดีเ…
+2023-01-31 14:51:48 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @KAFKA_Dev: Doe een ❤️ als je deze twee psychopaten voor een TRIBUNAAL wil zien! https://t.co/8X3q6gqzl0
+2023-01-31 14:51:49 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @sugamiint: Dynamite y spring day son el claro ejemplo de un hit, hablan de impacto cuando solo tienen una entrada a un chart, bts si es…
+2023-01-31 14:51:50 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @paulhayes55: Spring is around the corner. https://t.co/9iDLeOPIka
+2023-01-31 14:51:50 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @Tylacto @UniRocketeers now you've made us bring back this classic... https://t.co/haNa7YrOBn
+2023-01-31 14:51:50 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Do214: The Afrobeats music scene wouldn't be where it is today without the legend @wizkidayo. Things are about to get vibey this spring…
+2023-01-31 14:51:50 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @BlVNCHl: ⠀ ⠀⠀
+⠀ ⠀⠀
+       Moschino Spring / Summer 2023
+
+                    CHEONG ARTEMIS
+
+⠀ ⠀⠀ https://t.co/pKNy6XLo07
+2023-01-31 14:51:50 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Spring-likePeacemakerZachariahRaymond   
+#安徽 #平度 #韶关 https://t.co/RPHU1sjgrz
+2023-01-31 14:51:50 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @yamazakipan_cp: ＼#春のパンまつりカウントダウン キャンペーン🌸／
+
+春のパンまつりまであと1日✨
+えらべるPay1,000円分がその場で当たる❗️
+
+✅応募方法
+①@yamazakipan_cp をフォロー
+②この投稿を1/31 23:59までにRT…
+2023-01-31 14:51:51 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @SmcSorcerer: Two years ago today, one of @CristinaVee’s best characters first appeared. Happy 2 year anniversary to Spring Broken, and…
+2023-01-31 14:51:51 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @TENzenter: 230131 เหลา - Lhao Facebook Update
+
+✨ โดนเรียกกลับปารีสอีกแล้ว ! YSL ปล่อยภาพ #TENLEE จากวง NCT,WayV กับคอลเลคชั่น Spring/Su…
+2023-01-31 14:51:52 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @myogiadityanath @brajeshpathakup best python training in jaipur https://t.co/efHluOmfXJ
+python institute in jaipur https://t.co/efHluOmfXJ 
+best python coaching in jaipur https://t.co/efHluOmfXJ
+best java training institute in jaipur https://t.co/efHluOmfXJ
+2023-01-31 14:52:01 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests]: TwitterToKafkaServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-01-31 14:52:01 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication for test class com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests
+2023-01-31 14:52:02 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/rayan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/rayan/.m2/repository/org/json/json/20140107/json-20140107.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2023-01-31 14:52:02 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTests - Starting TwitterToKafkaServiceApplicationTests using Java 19.0.1 with PID 50500 (started by rayan in C:\Users\rayan\IdeaProjects\microservices-demo\twitter-to-kafka-service)
+2023-01-31 14:52:02 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2023-01-31 14:52:03 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTests - Started TwitterToKafkaServiceApplicationTests in 1.328 seconds (process running for 3.401)
+2023-01-31 14:52:03 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2023-01-31 14:52:03 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello World!
+2023-01-31 14:52:03 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-01-31 14:52:14 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @smashbaals: -You couldn’t work for months
+-They arrested you if you went to the beach
+-You couldn’t have your last Christmas grandma
+-W…
+2023-01-31 14:52:14 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @tentenxme: ภาพล่าสุดของ เตนล์ NCT ใน 2 ลุคจาก Saint Laurent คอลเล็กชั่น Spring/Summer23 
+#SaintLaurentxTEN
+#TEN #TENLEE #YSL #PFW23
+#Pa…
+2023-01-31 14:52:14 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text will post another one for me going slow
+2023-01-31 14:52:15 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @BlVNCHl: ⠀ ⠀⠀
+⠀ ⠀⠀
+       Moschino Spring / Summer 2023
+
+                         SHIN RYUJIN
+
+⠀ ⠀⠀ https://t.co/m1Ocgohcg9
+2023-01-31 14:52:16 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text A. https://t.co/B04nZ9MxmX
+2023-01-31 14:52:17 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @uptod4te: Stussy × Nike 2023年春アパレルコレクションが近日発売予定 ［ステューシー ナイキ］
+https://t.co/b4A761g0Ui https://t.co/Tf3ZlqGTIT
+2023-01-31 14:52:18 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @RishiSunak java training institute in jaipur https://t.co/efHluOmfXJ
+java classes in jaipur https://t.co/efHluOmfXJ
+Java training in Jaipur https://t.co/efHluOmfXJ
+Summer Internship Training Jaipur https://t.co/efHluOmfXJ
+Summer Training In Jaipur https://t.co/efHluOmfXJ
+2023-01-31 14:52:18 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @NahidHa52017772 He's a pedophile  I speak French he was saying that he was touching kid
+2023-01-31 14:52:18 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @fvhsbengals: Fuquay-Varina Spring Sports Tryout Info.
+https://t.co/eEHrJDyKOA
+2023-01-31 14:52:18 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @BlVNCHl: ⠀ ⠀⠀
+⠀ ⠀⠀
+       Moschino Spring / Summer 2023
+
+                                CYNO
+
+⠀ ⠀⠀ https://t.co/Gm8XR3qDAh
+2023-01-31 14:52:19 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @GCWrestling_ @collective2023 @JANELABABY Hi everyone,
+Please message me if you need tickets, I purchased extra tickets and I’m looking to sell.
+2023-01-31 14:52:19 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @kellr2010 @CheriDiNovo It would be interesting to watch.
