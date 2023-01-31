@@ -1454,3 +1454,41 @@ Frost in winter, maltose in autumn, lotus seed soup in summer and mung bean cris
 検索より失礼致します。
 こちら4点PayPayにてお譲りしていただくことは可能でしょうか？
 ご検討いただけますと幸いです、よろしくお願い致します。
+2023-01-30 14:38:34 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.4.1 with PID 39432 (C:\Users\rayan\IdeaProjects\microservices-demo\twitter-to-kafka-service\target\classes started by rayan in C:\Users\rayan\IdeaProjects\microservices-demo)
+2023-01-30 14:38:34 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-01-30 14:38:35 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.25 seconds (process running for 2.098)
+2023-01-30 14:38:35 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2023-01-30 14:38:35 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello World!
+2023-01-30 14:38:35 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-01-30 14:38:44 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Spring Paradise スプパラ 少年忍者公演 お譲り先を探しております。
+
+【日程】2/23 夜
+【座席】1階12列　下手
+【枚数】1枚
+【金額】ご提示ください
+【取引】要相談
+
+担当、金額を明記の上ご連絡お願い致します。
+
+#スプパラ譲 #少年忍者譲
+2023-01-30 14:38:44 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @ManekiNekoAIArt Gm Maneki!! Love the orange with the blue 🖤
+2023-01-30 14:38:46 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text INVITADO
+
+El pitchers sinaloense Adrián Hernández estará como invitado en el spring training de MLB de los @BlueJays.
+
+Hernández estaba el año pasado en el roster de 40 de Toronto, pero este año salió para abrir espacio a otro elemento.
+
+#LaCasaDelRey https://t.co/KjLxT5E6MJ
+2023-01-30 14:38:46 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @pYSLrada: Thierry Mugler spring 1997 HC https://t.co/Wm3jirupO7
+2023-01-30 14:38:47 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @karimonstertx: The line at Spring Market in Whitewright, TX #txwx #texomawx @EvanAndrewsFox4 @JesseWFAA @ReedTimmerAccu @MandyBaileyWX…
+2023-01-30 14:38:47 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Harley Daniel Maud Lytton Dominic Finn Spring Yule #天津 #上海 #深圳 https://t.co/03clXxspyj
+2023-01-30 14:38:48 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @PeculiarHype This is nice
+2023-01-30 14:38:49 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @SuiOkayBears op
+2023-01-30 14:38:50 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @dyingscribe: - Schools shut down
+
+- Young children have developmental deficits now
+
+- People had to get a vaccine to attend online clas…
+2023-01-30 14:38:50 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @BlueJays: OFFICIAL: We've invited 14 internal non-roster players to Spring Training. 
+
+Additionally, we've signed the following players…

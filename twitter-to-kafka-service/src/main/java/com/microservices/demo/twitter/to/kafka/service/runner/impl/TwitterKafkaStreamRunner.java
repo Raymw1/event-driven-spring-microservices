@@ -1,8 +1,7 @@
 package com.microservices.demo.twitter.to.kafka.service.runner.impl;
 
 import com.google.common.reflect.TypeToken;
-import com.microservices.demo.twitter.to.kafka.service.config.TwitterToKafkaServiceConfigData;
-import com.microservices.demo.twitter.to.kafka.service.listener.TwitterKafkaStatusListener;
+import com.microservices.demo.config.TwitterToKafkaServiceConfigData;
 import com.microservices.demo.twitter.to.kafka.service.publisher.StreamedTweetEvent;
 import com.microservices.demo.twitter.to.kafka.service.runner.StreamRunner;
 import com.twitter.clientlib.ApiException;
