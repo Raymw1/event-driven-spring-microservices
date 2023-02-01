@@ -12,7 +12,6 @@ import java.util.Map;
 
 @EnableRetry
 @Configuration
-@ComponentScan("com.microservices.demo")
 public class KafkaAdminConfig {
 
     private KafkaConfigData kafkaConfigData;

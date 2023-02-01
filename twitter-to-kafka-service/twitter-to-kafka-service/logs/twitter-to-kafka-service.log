@@ -127,3 +127,35 @@ https://t.co/eEHrJDyKOA
 2023-01-31 14:52:19 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @GCWrestling_ @collective2023 @JANELABABY Hi everyone,
 Please message me if you need tickets, I purchased extra tickets and I’m looking to sell.
 2023-01-31 14:52:19 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @kellr2010 @CheriDiNovo It would be interesting to watch.
+2023-01-31 15:20:20 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests]: TwitterToKafkaServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-01-31 15:20:20 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication for test class com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests
+2023-01-31 15:20:22 [main] WARN  o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/rayan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/rayan/.m2/repository/org/json/json/20140107/json-20140107.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2023-01-31 15:20:23 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTests - Starting TwitterToKafkaServiceApplicationTests using Java 19.0.1 with PID 37172 (started by rayan in C:\Users\rayan\IdeaProjects\microservices-demo\twitter-to-kafka-service)
+2023-01-31 15:20:23 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2023-01-31 15:20:25 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTests - Started TwitterToKafkaServiceApplicationTests in 4.382 seconds (process running for 6.255)
+2023-01-31 15:20:25 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2023-01-31 15:20:25 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello World!
+2023-01-31 15:20:25 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-01-31 15:20:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @rinamiele: Defend, Defend, Defend™ 
+
+This is all he does. All day long. Every. Single. Day. 😳
+
+#bird #birdphotography #newyork #newyork…
+2023-01-31 15:20:37 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @youyve: Over the moon about this spring tour with people I deeply respect. We will be playing majority new songs! Presale tickets and V…
+2023-01-31 15:20:38 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text So excited! Spring is coming! My time of the year. High in upper 60s today and sunny. Going for my 4 mile walk/run on the Greenway! https://t.co/H9gBlaPkbH
+2023-01-31 15:20:38 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @Java_jigga: "skydoesminecraft is a crack addicted wife beating they them now" https://t.co/vdrg7FaaBc
+2023-01-31 15:20:38 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @ozurdilemecem niye sadece fall22 attın hepsini atsana bi sövelim
+2023-01-31 15:20:39 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @bemindlee: ลุคเตนล์ก็คือถอดจากรันเวย์ Fendi Spring/Summer 2023 Menswear
+มาเลย แล้วมีสูทตัวนอกเสริมอีกที https://t.co/RuCRYY6j80
+2023-01-31 15:20:40 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text RT @AmschelKavka: The afternoons I spent on my hair.
+
+Franz Kafka, 1912. https://t.co/4D1Em3VxIO
+2023-01-31 15:20:40 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text @Onitheman12 month 😜winter is comin in march in my area and i wont conplain at all lucky us for january and early spring yes
