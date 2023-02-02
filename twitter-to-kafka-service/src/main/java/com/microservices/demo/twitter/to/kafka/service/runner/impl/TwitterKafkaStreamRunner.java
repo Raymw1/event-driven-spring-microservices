@@ -2,7 +2,7 @@ package com.microservices.demo.twitter.to.kafka.service.runner.impl;
 
 import com.google.common.reflect.TypeToken;
 import com.microservices.demo.config.TwitterToKafkaServiceConfigData;
-import com.microservices.demo.twitter.to.kafka.service.publisher.StreamedTweetEvent;
+import com.microservices.demo.twitter.to.kafka.service.publisher.TweetEvent;
 import com.microservices.demo.twitter.to.kafka.service.runner.StreamRunner;
 import com.twitter.clientlib.ApiException;
 import com.twitter.clientlib.JSON;
@@ -30,6 +30,7 @@ public class TwitterKafkaStreamRunner implements StreamRunner {
     private final TwitterToKafkaServiceConfigData twitterToKafkaServiceConfigData;
 
     private final ApplicationEventPublisher eventPublisher;
+
 
     private TwitterApi twitterApi;
 
@@ -68,9 +69,9 @@ public class TwitterKafkaStreamRunner implements StreamRunner {
                     }
                     FilteredStreamingTweetResponse jsonObject = json.getGson().fromJson(line, localVarReturnType);
                     if (jsonObject != null) {
-                        String tweetText = jsonObject.getData().getText();
+                        Tweet tweet = jsonObject.getData();
 
-                        this.eventPublisher.publishEvent(new StreamedTweetEvent(tweetText));
+                        this.eventPublisher.publishEvent(new TweetEvent(tweet));
                     }
                     line = reader.readLine();
                 }

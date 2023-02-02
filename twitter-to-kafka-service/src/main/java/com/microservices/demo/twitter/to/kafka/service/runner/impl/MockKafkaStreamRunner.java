@@ -3,10 +3,10 @@ package com.microservices.demo.twitter.to.kafka.service.runner.impl;
 
 import com.microservices.demo.config.TwitterToKafkaServiceConfigData;
 import com.microservices.demo.twitter.to.kafka.service.exception.TwitterToKafkaServiceException;
-import com.microservices.demo.twitter.to.kafka.service.model.StreamedTweet;
-import com.microservices.demo.twitter.to.kafka.service.publisher.StreamedTweetEvent;
+import com.microservices.demo.twitter.to.kafka.service.publisher.TweetEvent;
 import com.microservices.demo.twitter.to.kafka.service.runner.StreamRunner;
 import com.twitter.clientlib.ApiException;
+import com.twitter.clientlib.model.Tweet;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,10 +14,8 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Component;
 
-import java.time.ZonedDateTime;
-import java.time.format.DateTimeFormatter;
+import java.time.OffsetDateTime;
 import java.util.Arrays;
-import java.util.Locale;
 import java.util.Random;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadLocalRandom;
@@ -78,8 +76,8 @@ public class MockKafkaStreamRunner implements StreamRunner {
     private void simulateTwitterStream(String[] keywords, int minTweetLength, int maxTweetLength, long sleepTimeMs) {
         Executors.newSingleThreadExecutor().submit(() -> {
             while (true) {
-                StreamedTweet streamedTweet = getFormattedTweet(keywords, minTweetLength, maxTweetLength);
-                this.eventPublisher.publishEvent(new StreamedTweetEvent(streamedTweet.getText()));
+                Tweet tweet = getFormattedTweet(keywords, minTweetLength, maxTweetLength);
+                this.eventPublisher.publishEvent(new TweetEvent(tweet));
                 sleep(sleepTimeMs);
             }
         });
@@ -93,13 +91,13 @@ public class MockKafkaStreamRunner implements StreamRunner {
         }
     }
 
-    private StreamedTweet getFormattedTweet(String[] keywords, int minTweetLength, int maxTweetLength) {
-        StreamedTweet streamedTweet = new StreamedTweet();
-        streamedTweet.setCreatedAt(ZonedDateTime.now().format(DateTimeFormatter.ofPattern(TWITTER_STATUS_DATE_FORMAT, Locale.ENGLISH)));
-        streamedTweet.setId(String.valueOf(ThreadLocalRandom.current().nextLong(Long.MAX_VALUE)));
-        streamedTweet.setText(getRandomTweetContent(keywords,minTweetLength,maxTweetLength));
-        streamedTweet.setAuthorId(String.valueOf(ThreadLocalRandom.current().nextLong(Long.MAX_VALUE)));
-        return streamedTweet;
+    private Tweet getFormattedTweet(String[] keywords, int minTweetLength, int maxTweetLength) {
+        Tweet tweet = new Tweet();
+        tweet.setCreatedAt(OffsetDateTime.now());
+        tweet.setId(String.valueOf(ThreadLocalRandom.current().nextLong(Long.MAX_VALUE)));
+        tweet.setText(getRandomTweetContent(keywords,minTweetLength,maxTweetLength));
+        tweet.setAuthorId(String.valueOf(ThreadLocalRandom.current().nextLong(Long.MAX_VALUE)));
+        return tweet;
     }
 
     private String getRandomTweetContent(String[] keywords, int minTweetLength, int maxTweetLength) {
