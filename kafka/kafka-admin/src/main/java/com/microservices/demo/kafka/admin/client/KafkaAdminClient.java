@@ -70,6 +70,7 @@ public class KafkaAdminClient {
                 kafkaConfigData.getNumberOfPartitions(),
                 kafkaConfigData.getReplicationFactor()
         )).collect(Collectors.toList());
+        LOG.info(kafkaTopics.toString());
         return adminClient.createTopics(kafkaTopics);
     }
 
@@ -120,7 +121,7 @@ public class KafkaAdminClient {
         Integer maxRetry = retryConfigData.getMaxAttempts();
         Integer multiplier = retryConfigData.getMultiplier().intValue();
         Long sleepTimeMs = retryConfigData.getSleepTimeMs();
-        while (getSchemaRegistryStatus().is2xxSuccessful()) {
+        while (!getSchemaRegistryStatus().is2xxSuccessful()) {
             checkMaxRetry(retryCount++, maxRetry);
             sleep(sleepTimeMs);
             sleepTimeMs *= multiplier;

@@ -1,0 +1,30 @@
+2023-01-31 14:47:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 19.0.1 with PID 12332 (C:\Users\rayan\IdeaProjects\microservices-demo\twitter-to-kafka-service\target\classes started by rayan in C:\Users\rayan\IdeaProjects\microservices-demo)
+2023-01-31 14:47:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-01-31 14:47:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.972 seconds (process running for 2.588)
+2023-01-31 14:47:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2023-01-31 14:47:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello World!
+2023-01-31 14:47:31 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-01-31 14:47:33 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Exception when calling TweetsApi#searchStream
+2023-01-31 14:47:33 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Status code: 401
+2023-01-31 14:47:33 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Reason: {
+  "title": "Unauthorized",
+  "type": "about:blank",
+  "status": 401,
+  "detail": "Unauthorized"
+}
+2023-01-31 14:47:33 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Response headers: {cache-control=[no-cache, no-store, max-age=0], content-length=[99], content-type=[application/problem+json], date=[Tue, 31 Jan 2023 17:47:32 GMT], perf=[7626143928], server=[tsa_d], x-connection-hash=[ef5675cb2f0f53c2bcaf8869b08dab6cd08a0d27f50dc830ac2bcdf62d84f0af], x-response-time=[119], x-transaction-id=[6ff67dc69522ed54]}
+2023-01-31 14:50:27 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 19.0.1 with PID 4140 (C:\Users\rayan\IdeaProjects\microservices-demo\twitter-to-kafka-service\target\classes started by rayan in C:\Users\rayan\IdeaProjects\microservices-demo)
+2023-01-31 14:50:27 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-01-31 14:50:28 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.033 seconds (process running for 2.212)
+2023-01-31 14:50:28 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2023-01-31 14:50:28 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello World!
+2023-01-31 14:50:28 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-01-31 14:50:29 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Exception when calling TweetsApi#searchStream
+2023-01-31 14:50:29 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Status code: 401
+2023-01-31 14:50:29 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Reason: {
+  "title": "Unauthorized",
+  "type": "about:blank",
+  "status": 401,
+  "detail": "Unauthorized"
+}
+2023-01-31 14:50:29 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Response headers: {cache-control=[no-cache, no-store, max-age=0], content-length=[99], content-type=[application/problem+json], date=[Tue, 31 Jan 2023 17:50:29 GMT], perf=[7626143928], server=[tsa_d], x-connection-hash=[1ca2eca9e891b33bc4f593e4ee5dcb3cc5efa7d1b140cc0811d70aa38439c96c], x-response-time=[118], x-transaction-id=[3cc205c4481c5339]}

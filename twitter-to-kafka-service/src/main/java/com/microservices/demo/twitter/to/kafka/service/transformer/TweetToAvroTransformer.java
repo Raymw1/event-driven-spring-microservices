@@ -4,6 +4,8 @@ import com.microservices.demo.kafka.avro.model.TwitterAvroModel;
 import com.twitter.clientlib.model.Tweet;
 import org.springframework.stereotype.Component;
 
+import java.util.Date;
+
 @Component
 public class TweetToAvroTransformer {
 
@@ -13,7 +15,8 @@ public class TweetToAvroTransformer {
                 .setId(Long.parseLong(tweet.getId()))
                 .setUserId(Long.parseLong(tweet.getAuthorId()))
                 .setText(tweet.getText())
-                .setCreatedAt(tweet.getCreatedAt().toEpochSecond())
+//                .setCreatedAt(tweet.getCreatedAt().toEpochSecond())
+                .setCreatedAt(null)
                 .build();
     }
 }
